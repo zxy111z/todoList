@@ -54,6 +54,9 @@
     z-index: 999;
     display: none;
 }
+.mask.active{
+    display: block;
+}
 .mask .alertBox,.mask .editBox{
     width: 80vw;
     height: 50vh;

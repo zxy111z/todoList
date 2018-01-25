@@ -175,7 +175,7 @@
         $(".main")
           .css("filter", "blur(2px)")
           .next()
-          .show().children(".editBox").addClass("show").find("textarea").val(text);
+          .addClass("active").show().children(".editBox").addClass("show").find("textarea").val(text);
      });
     $(".submit2").click(function(){
         var id=$(document).data("id");
@@ -186,7 +186,7 @@
         data[id].time=date.getTime();
         saveData(data);
         render();
-        $(this).parent().removeClass("show").hide().prev().css("filter", "none")
+        $(this).parent().removeClass("show").parent().removeClass("active").prev().css("filter", "none");
     });
 
 
