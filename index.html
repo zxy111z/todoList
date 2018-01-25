@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ToDO List</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/swiper.css">
+</head>
+<body>
+    <div class="main">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="width: 100%;height: 400px;background: red">Slide 1</div>
+                <div class="swiper-slide"style="width: 100%;height: 400px;background: red">Slide 2</div>
+                <div class="swiper-slide"style="width: 100%;height: 400px;background: red">Slide 3</div>
+                <div class="swiper-slide"style="width: 100%;height: 400px;background: red">Slide 4</div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!--&lt;!&ndash; Add Arrows &ndash;&gt;-->
+            <!--<div class="swiper-button-next"></div>-->
+            <!--<div class="swiper-button-prev"></div>-->
+        </div>
+        <section class="btn-wrapper">
+            <div class="plan active">未完成</div>
+            <div class="done">已完成</div>
+        </section>
+        <section class="content">
+            <ul></ul>
+        </section>
+        <div class="add">添加</div>
+    </div>
+    <div class="mask">
+        <div class="alertBox">
+            <textarea id="text"></textarea>
+            <div class="submit">提交</div>
+            <span class="close">X</span>
+        </div>
+        <div class="editBox">
+            <textarea id="edit"></textarea>
+            <div class="submit2">修改</div>
+        </div>
+    </div>
+<div class="tips"></div>
+</body>
+<script src="js/jquery-3.2.1.js"></script>
+<script src="js/iscroll.js"></script>
+<script src="js/swiper.js"></script>
+<script src="js/hammer.js"></script>
+<script src="js/jquery.transit.js"></script>
+<script src="js/index.js"></script>
+</html>
