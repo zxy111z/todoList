@@ -2,16 +2,30 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style: none;
+}
+@font-face {
+    font-family: 'iconfont';  /* project id 558471 */
+    src: url('https://at.alicdn.com/t/font_558471_8d3efykua0pb9.eot');
+    src: url('https://at.alicdn.com/t/font_558471_8d3efykua0pb9.eot?#iefix') format('embedded-opentype'),
+    url('https://at.alicdn.com/t/font_558471_8d3efykua0pb9.woff') format('woff'),
+    url('https://at.alicdn.com/t/font_558471_8d3efykua0pb9.ttf') format('truetype'),
+    url('https://at.alicdn.com/t/font_558471_8d3efykua0pb9.svg#iconfont') format('svg');
 }
 .swiper-slide{
     font-size: 60px;
     color: #fff;
     height: 25vh;
 }
+.swiper-slide img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
 .btn-wrapper{
     width: 100vw;
     height: 10vh;
-    background: yellowgreen;
+    /*background: yellowgreen;*/
     font-size: 45px;
 }
 .btn-wrapper div{
@@ -53,9 +67,6 @@
     top: 0;
     z-index: 999;
     display: none;
-}
-.mask.active{
-    display: block;
 }
 .mask .alertBox,.mask .editBox{
     width: 80vw;

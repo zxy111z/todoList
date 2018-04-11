@@ -68,7 +68,7 @@
                 <li id=${index}>
                 <p>${val.text}</p>
                 <time>${getDate(val.time)}</time>
-                <i class=${val.isStar?"active":""}>o</i>
+                <i class=${val.isStar?"active":""}>&#xe655;</i>
                 <div class="donebtn">完成</div>
                 </li>`
             }else if(flag==="done"&& val.isDone === true){
@@ -76,7 +76,7 @@
                 <li id=${index}>
                 <p>${val.text}</p>
                 <time>${getDate(val.time)}</time>
-                <i class=${val.isStar?"active":""}>o</i>
+                <i class=${val.isStar?"active":""}>&#xe655;</i>
                 <div class="delbtn">删除</div>
                 </li>`
             }
@@ -175,7 +175,7 @@
         $(".main")
           .css("filter", "blur(2px)")
           .next()
-          .addClass("active").show().children(".editBox").addClass("show").find("textarea").val(text);
+          .show().children(".editBox").addClass("show").find("textarea").val(text);
      });
     $(".submit2").click(function(){
         var id=$(document).data("id");
@@ -186,7 +186,8 @@
         data[id].time=date.getTime();
         saveData(data);
         render();
-        $(this).parent().removeClass("show").parent().removeClass("active").prev().css("filter", "none");
+        $(this).parent().removeClass("show").parent().css("filter", "none").hide();
+        render();
     });
 
 
